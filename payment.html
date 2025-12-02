@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment - EduMaster</title>
+    <style>
+        body { font-family: Arial; background: #eeeeee; }
+        header { background: #4a90e2; padding: 20px; color: white; text-align: center; }
+        nav a { margin: 15px; color: white; text-decoration: none; font-weight: bold; }
+        .form-container { background: white; width: 350px; margin: auto; margin-top: 40px; padding: 25px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.2); }
+        input, select { width: 100%; padding: 10px; margin-top: 10px; }
+        .btn { background: #4a90e2; padding: 12px; color: white; border: none; margin-top: 15px; width: 100%; font-size: 16px; cursor: pointer; border-radius: 5px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Payment Page</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="courses.html">Courses</a>
+        <a href="payment.html">Buy Now</a>
+    </nav>
+</header>
+
+<div class="form-container">
+    <h2>Complete Your Purchase</h2>
+
+    <form action="thankyou.html">
+        <label>Select Course</label>
+        <select required>
+            <option value="">-- Select --</option>
+            <option>Python Programming</option>
+            <option>C Programming</option>
+            <option>Artificial Intelligence</option>
+            <option>Machine Learning</option>
+        </select>
+
+        <label>Your Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Card Number</label>
+        <input type="text" required>
+
+        <label>UPI ID (optional)</label>
+        <input type="text">
+
+        <button class="btn" type="submit">Pay Now</button>
+    </form>
+</div>
+
+</body>
+</html>
